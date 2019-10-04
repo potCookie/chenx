@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="OFF" monitorInterval="1800">
+	<properties>
+		<property name="LOG_HOME">logs</property>
+		<property name="FILE_NAME">finance-pay</property>
+	</properties>
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%-5p] %-18d{MM-dd HH:mm:ss.SS}|%m |%C.%M(%L)%n" />
+		</Console>
+
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<!-- 这里是输入到控制台 -->
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>
