@@ -2,6 +2,11 @@ package com.chenx.chenbasic.pojo.user;
 
 import java.io.Serializable;
 
+/**
+ * 用户
+ * @author KuhYygy
+ *
+ */
 public class User implements Serializable {
 
 	/**
