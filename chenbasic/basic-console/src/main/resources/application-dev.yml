@@ -33,3 +33,10 @@ mybatis:
     configuration:
         default-fetch-size: 100
         default-statement-timeout: 30
+
+pagehelper:
+    helperDialect: postgresql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+    returnPageInfo: check

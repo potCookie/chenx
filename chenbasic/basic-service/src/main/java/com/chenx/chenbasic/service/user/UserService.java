@@ -1,8 +1,7 @@
 package com.chenx.chenbasic.service.user;
 
-import java.util.List;
-
 import com.chenx.chenbasic.pojo.user.User;
+import com.github.pagehelper.PageInfo;
 
 /**
  * 用户管理
@@ -11,6 +10,6 @@ import com.chenx.chenbasic.pojo.user.User;
  */
 public interface UserService {
 	
-	List<User> getAllUser();
+	PageInfo<User> getAllUser();
 
 }
