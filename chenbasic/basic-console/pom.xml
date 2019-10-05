@@ -6,6 +6,7 @@
 		<groupId>com.chenx</groupId>
 		<artifactId>chenbasic</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath />
 	</parent>
 	<artifactId>basic-console</artifactId>
 	
