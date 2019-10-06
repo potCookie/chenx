@@ -28,7 +28,6 @@ spring:
 
 mybatis:
     type-aliases-package: com.chenx.chenbasic.pojo
-        #指定sql映射文件的位置
     mapper-locations: classpath:mapper/*.xml  
     configuration:
         default-fetch-size: 100
