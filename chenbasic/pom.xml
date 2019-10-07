@@ -89,6 +89,24 @@
 	<build>
 		<plugins>
 			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>basic-console</id>
+						<goals>
+							<goal>jar</goal>
+						</goals><!-- 打包的后缀 -->
+						<phase>prepare-package</phase><!-- life的多个阶段 ，预打包 -->
+						<configuration>
+							<excludes>
+								<exclude>**/*.yml</exclude>
+								<exclude>**/*.xml</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
